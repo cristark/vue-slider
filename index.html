@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Welcome to Vue Slider</title>
+    <!-- Favicon -->
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Link Google Font -->
+
+    <!-- Link Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- Link foglio Framework Personale (optional) -->
+    
+    <!-- Link foglio di stile personale -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MAIN -->
+    <main>
+        <div id="container">
+            <div class="prex" @click="movePrev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="img_box">
+                <img :src="src[counter]" alt="">
+            </div>
+            <div class="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link Script Javascript -->
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
