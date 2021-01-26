@@ -22,19 +22,34 @@
     <!-- MAIN -->
     <main>
         <div id="container">
+
+            <!-- Titolo Immagini -->
             <div class="title">
                 <h1> {{names[counter]}} </h1>
             </div>
+
+            <!-- Contenitore centrale -->
             <div class="img_container">
+
+                <!-- Freccia Immagine Precedente -->
                 <div class="prex" @click="movePrev">
                     <i class="fas fa-chevron-left"></i>
                 </div>
+
+                <!-- Box immagini aggiornato con Vue -->
                 <div class="img_box">
                     <img :src="src[counter]" alt="">
                 </div>
+
+                <!-- Freccia Immagine Successiva -->
                 <div class="next" @click="moveNext">
                     <i class="fas fa-chevron-right"></i>
                 </div>
+            </div>
+
+            <!-- Sezione pallini posizione immagini -->
+            <div class="dot_box">
+                <div v-for="(element, index) in src" class="dot" :class="(index == counter) ? 'active' : '' "></div>
             </div>
         </div>
     </main>

@@ -41,7 +41,9 @@ i:hover {
 }
 
 #container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
 }
 
@@ -64,4 +66,23 @@ i:hover {
   margin: auto 50px;
   border: 5px solid #fff;
   border-radius: 5px;
+}
+
+.dot_box {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: #3c6e71;
+  transition: all 0.2s linear;
 }
