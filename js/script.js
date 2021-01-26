@@ -8,6 +8,12 @@ let app = new Vue({
             'img/dubai.jpg',
             'img/cuba.jpg',
             'img/kyoto.jpg',
+        ],
+        names: [
+            'Bali - Thailand',
+            'Dubai - United Arab Emirates',
+            'Havana - Cuba',
+            'Kyoto - Japan'
         ]
     },
     methods: {
@@ -15,6 +21,11 @@ let app = new Vue({
             (this.counter == 0) ? 
                 this.counter = this.src.length - 1 :
                 this.counter --;
+        },
+        moveNext() {
+            (this.counter == this.src.length - 1) ? 
+                this.counter = 0 :
+                this.counter ++;
         }
     }
 

@@ -22,14 +22,19 @@
     <!-- MAIN -->
     <main>
         <div id="container">
-            <div class="prex" @click="movePrev">
-                <i class="fas fa-chevron-left"></i>
+            <div class="title">
+                <h1> {{names[counter]}} </h1>
             </div>
-            <div class="img_box">
-                <img :src="src[counter]" alt="">
-            </div>
-            <div class="next">
-                <i class="fas fa-chevron-right"></i>
+            <div class="img_container">
+                <div class="prex" @click="movePrev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="img_box">
+                    <img :src="src[counter]" alt="">
+                </div>
+                <div class="next" @click="moveNext">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
         </div>
     </main>
