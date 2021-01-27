@@ -80,6 +80,7 @@ i:hover {
   height: 20px;
   background-color: #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .active {

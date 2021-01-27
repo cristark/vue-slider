@@ -9,11 +9,8 @@
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Link Google Font -->
-
     <!-- Link Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <!-- Link foglio Framework Personale (optional) -->
-    
     <!-- Link foglio di stile personale -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -49,7 +46,7 @@
 
             <!-- Sezione pallini posizione immagini -->
             <div class="dot_box">
-                <div v-for="(element, index) in src" class="dot" :class="(index == counter) ? 'active' : '' "></div>
+                <div v-for="(element, index) in src" class="dot" :class="(index == counter) ? 'active' : '' " @click="changeImg(index)"></div>
             </div>
         </div>
     </main>

@@ -26,6 +26,9 @@ let app = new Vue({
             (this.counter == this.src.length - 1) ? 
                 this.counter = 0 :
                 this.counter ++;
+        },
+        changeImg(indice) {
+            this.counter = indice;
         }
     }
 
