@@ -3,6 +3,7 @@ let app = new Vue({
     el: '#container',
     data: {
         counter: 0,
+        slideShow: '',
         src: [
             'img/bali.jpg',
             'img/dubai.jpg',
@@ -29,6 +30,12 @@ let app = new Vue({
         },
         changeImg(indice) {
             this.counter = indice;
+        },
+        startSlideShow() {
+            this.slideShow = setInterval(this.moveNext, 2500);
+        },
+        stopSlideShow() {
+            clearInterval(this.slideShow);
         }
     }
 

@@ -48,11 +48,28 @@ i:hover {
 }
 
 .title {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title h1,
+.slideshow i {
   width: 100%;
   text-align: center;
   padding: 30px 0;
   color: #fff;
   text-shadow: 1px 1px black;
+}
+
+.title .slideshow {
+  display: flex;
+}
+
+.slideshow i {
+  margin: 0 15px;
+  font-size: 1.2em;
 }
 
 .img_container {

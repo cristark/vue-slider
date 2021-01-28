@@ -23,6 +23,10 @@
             <!-- Titolo Immagini -->
             <div class="title">
                 <h1> {{names[counter]}} </h1>
+                <div class="slideshow">
+                    <i @click="stopSlideShow" class="fas fa-pause"></i>
+                    <i @click="startSlideShow" class="fas fa-play"></i>
+                </div>
             </div>
 
             <!-- Contenitore centrale -->
